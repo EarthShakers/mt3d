@@ -69,7 +69,7 @@ const configs = {
   fadeDuration: 1000,
 
   // Origin of coordinates (around Tokyo station)
-  defaultCenter: [139.767, 35.6814],
+  defaultCenter: [114.07, 22.62],
 
   // Default zoom level
   defaultZoom: 14,

@@ -80,18 +80,18 @@ export function loadStaticData(dataUrl, lang, clock) {
       ...extra.map((name) => `${dataUrl}/${name}`),
     ].map(loadJSON)
   ).then((data) => ({
-    dict: data[0],
-    railwayData: data[1],
-    stationData: data[2],
-    featureCollection: data[3],
-    timetableData: data[4].concat(...data.slice(12)),
-    railDirectionData: data[5],
-    trainTypeData: data[6],
-    trainVehicleData: data[7],
-    operatorData: data[8],
-    airportData: data[9],
-    flightStatusData: data[10],
-    poiData: data[11],
+    dict: data[0], // 语言字典
+    railwayData: data[1], // 地铁线路
+    stationData: data[2], // 站点
+    featureCollection: data[3], // 地图要素
+    timetableData: data[4].concat(...data.slice(12)), // 时间表
+    railDirectionData: data[5], // 环线
+    trainTypeData: data[6], // 线路类型
+    trainVehicleData: data[7], // 车颜色
+    operatorData: data[8], // 航空公司
+    airportData: data[9], // 机场
+    flightStatusData: data[10], //航线信息
+    poiData: data[11], //地铁站口
   }));
 }
 
